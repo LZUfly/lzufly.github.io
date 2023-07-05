@@ -12,8 +12,11 @@ hasCJKLanguage = true
 enableRobotsTXT = true
 enableEmoji = true
 enableGitInfo = true
-relativeURLs = false
+relativeURLs = true
 buildDrafts = false
 summaryLength = 150
 # ignore some build errors
 ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
